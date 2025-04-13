@@ -1,7 +1,7 @@
 
 # Django Boilerplate with Simple JWT 🐍🔐
 
-A simple Django project boilerplate that integrates **Simple JWT** for user authentication. This boilerplate provides a quick starting point for setting up JWT-based authentication and includes a user login API for your Django application. It uses PostgreSQL as the database. 🚀
+A simple Django project boilerplate that integrates DRF (Django Rest Framework) and **Simple JWT** for user authentication. This boilerplate provides a quick starting point for setting up JWT-based authentication and includes a user login API for your Django application. It uses PostgreSQL as the database. 🚀
 
 ## Features ✨
 
@@ -34,6 +34,24 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 ### Install Dependencies 📥
+
+
+## Dependencies 📦
+
+This project uses the following dependencies:
+
+- **Django** – A high-level Python web framework.
+- **Django REST Framework (DRF)** – A powerful toolkit for building Web APIs in Django.
+- **Simple JWT** – A JSON Web Token authentication plugin for DRF.
+- **PostgreSQL** – The database used by the project.
+
+To install the dependencies, run:
+```bash
+pip install -r requirements.txt
+```
+
+Make sure to have PostgreSQL running and configure your environment variables correctly.
+
 
 Once the virtual environment is activated, install the required dependencies:
 
@@ -165,8 +183,6 @@ To refresh your JWT token, send a **POST** request to `/api/auth/token/refresh/`
 
 You will receive a new access token in the response.
 
-You will receive a new access token in the response.
-
 ## API Endpoints 📡
 
 - **POST /api/auth/register/** – Register a new user.
@@ -187,3 +203,7 @@ To contribute, please fork this repository, make your changes, and submit a pull
 
 - Django
 - Simple JWT
+
+# License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

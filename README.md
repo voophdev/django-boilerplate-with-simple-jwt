@@ -129,65 +129,9 @@ python manage.py runserver
 
 Visit `http://127.0.0.1:8000` in your browser to see the app running.
 
-## Usage 🔥
-
-### Register a User 📝
-
-To register a new user, send a **POST** request to `/api/auth/register/` with the following data:
-
-```json
-{
-  "username": "your_username",
-  "email": "your_email@example.com",
-  "password": "your_password"
-}
-```
-
-### Login with JWT 🔑
-
-To log in and get a JWT token, send a **POST** request to `/api/auth/login/` with the following data:
-
-```json
-{
-  "username": "your_username",
-  "password": "your_password"
-}
-```
-
-You will receive a JWT token as a response:
-
-```json
-{
-  "refresh": "your_refresh_token",
-  "access": "your_access_token"
-}
-```
-
-### Use the JWT Token for Authenticated Requests 🔓
-
-To make authenticated requests, include the **access token** in the Authorization header:
-
-```bash
-Authorization: Bearer your_access_token
-```
-
-### Refresh JWT Token 🔄
-
-To refresh your JWT token, send a **POST** request to `/api/auth/token/refresh/` with the following data:
-
-```json
-{
-  "refresh": "your_refresh_token"
-}
-```
-
-You will receive a new access token in the response.
-
 ## API Endpoints 📡
 
-- **POST /api/auth/register/** – Register a new user.
 - **POST /api/auth/login/** – Log in and get JWT tokens.
-- **POST /api/auth/token/refresh/** – Refresh the access token using the refresh token.
 
 ## Settings ⚙️
 

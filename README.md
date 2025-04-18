@@ -132,6 +132,7 @@ Visit `http://127.0.0.1:8000` in your browser to see the app running.
 ## Usage
 
 Visit `http://127.0.0.1:8000/api/auth/login/` and get your JWT tokens & refresh tokens
+
 **Content**
 ```json
 {

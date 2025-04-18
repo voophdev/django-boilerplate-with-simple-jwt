@@ -129,6 +129,17 @@ python manage.py runserver
 
 Visit `http://127.0.0.1:8000` in your browser to see the app running.
 
+## Usage
+
+Visit `http://127.0.0.1:8000/api/auth/login/` and get your JWT tokens & refresh tokens
+**Content**
+```json
+{
+    "email": "your-email",
+    "password": "your-password"
+}
+```
+
 ## API Endpoints 📡
 
 - **POST /api/auth/login/** – Log in and get JWT tokens.
